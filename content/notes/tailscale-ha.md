@@ -47,7 +47,7 @@ Kind=dummy
 Name=lo1
 
 [Network]
-Address="사설 IP 대역대 내의 임의의 CIDR"
+Address=${사설_IP_대역대_내의_임의의_CIDR}
 ```
 3. `networkctl reload` 명령을 실행하여 1, 2의 설정을 적용한 후, `networkctl status` 명령을 실행하여 loopback 설정을 확인한다.
 ![img](/assets/images/tailscale-ha/networkctl-status.png)
@@ -63,7 +63,7 @@ sudo nmcli connection add type dummy \
     ifname lo1 \
     con-name lo1 \
     ipv4.method manual \
-    ipv4.addresses ${사설 IP 대역대 내의 임의의 CIDR} \
+    ipv4.addresses ${사설_IP_대역대_내의_임의의_CIDR} \
     ipv6.method ignore
 ```
 
@@ -74,7 +74,7 @@ Tailscale을 통해 위에서 생성한 loopback을 tailnet 전체로 노출했�
 
 1. Tailscale subnet router 설정
 ```sh
-sudo tailscale up --advertise-routes ${위 단계에서 생성한 loopback의 CIDR}
+sudo tailscale up --advertise-routes ${위_단계에서_생성한_loopback의_CIDR}
 ```
 2. Subnet router 설정 허용
 콘솔의 "Edit Route Settings" 내에서 새로 추가한 subnet router 대역을 허용 처리한다.
