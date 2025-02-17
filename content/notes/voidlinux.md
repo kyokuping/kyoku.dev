@@ -193,7 +193,7 @@ Apple Silicon 기기들은 모두 UEFI 부트 시스템을 사용하니, Void �
 $ xbps-install -S grub-arm64-efi
 $ grub-install --target=arm64-efi --efi-directory=/boot/efi --bootloader-id="Void" --removable
 ```
-Asahi Linux의 경우 이동식 디스크 위에서도 부팅하능하도록 하는 옵션인 `--removable` 옵션 사용이 권장된다.
+Asahi Linux의 경우 이동식 디스크 위에서도 부팅가능하도록 하는 옵션인 `--removable` 옵션 사용이 권장된다.
 
 ### 8. 끝!
 
