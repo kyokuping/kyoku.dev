@@ -43,9 +43,9 @@ anchors = "on"
 
 [extra]
 
-name = "교쿠"
-id = "kyokugirl"
-bio = "안녕하세요! "
+name = "Jeaeun Kim"
+id = "kyokuping"
+bio = "DX 중심 DevOps Engineer 김재은입니다."
 avatar = "img/kyoku.jpg"
 
 display_id = true
